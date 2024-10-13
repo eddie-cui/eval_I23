@@ -24,7 +24,19 @@ The following are the methods that need to be assessed, with parentheses represe
 We use datasets including 30 objects in SyncDreamer and 70 objects which randomly chosen. [link](https://drive.google.com/file/d/1-2vuKdzsV44z_g86pFBs-lLxu6-hh55a/view?usp=drive_link)
 
 The dataset can be rendered according to the following content to specify the viewing angle, if necessary, you can render it yourself.
+### Installation
+```
+# install Pytorch
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+# insatll requirements
+pip install tqdm, open3d, transforms3d, scikit-image, opencv-python, mesh2sdf
+git clone https://github.com/NVlabs/nvdiffrast.git
+cd nvdiffrast
+pip install .
+cd ..
+pip install matplotlib, ninja
 
+```
 ### Render the result of the specified perspective
 0. Download blender script from [utl](https://download.blender.org/release/Blender3.2) and unzip it at current path.
 1. Replace the desired degrees in [view_ls.txt](view_ls.txt). The first column points to elevation and the second column points to azimuth. 
