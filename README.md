@@ -28,7 +28,7 @@ The dataset can be rendered according to the following content to specify the vi
 ```
 # install Pytorch
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
-# insatll requirements
+# install requirements
 pip install tqdm, open3d, transforms3d, scikit-image, opencv-python, mesh2sdf
 git clone https://github.com/NVlabs/nvdiffrast.git
 cd nvdiffrast
