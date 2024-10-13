@@ -24,17 +24,17 @@ The following are the methods that need to be assessed, with parentheses represe
 We use datasets including 30 objects in SyncDreamer and 70 objects which randomly chosen. [link](https://drive.google.com/file/d/1-2vuKdzsV44z_g86pFBs-lLxu6-hh55a/view?usp=drive_link)
 
 The dataset can be rendered according to the following content to specify the viewing angle, if necessary, you can render it yourself.
-### Installation
+### Installation--eval_mesh
 ```
 # install Pytorch
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 # install requirements
-pip install tqdm, open3d, transforms3d, scikit-image, opencv-python, mesh2sdf
+pip install tqdm open3d transforms3d scikit-image opencv-python mesh2sdf
 git clone https://github.com/NVlabs/nvdiffrast.git
 cd nvdiffrast
 pip install .
 cd ..
-pip install matplotlib, ninja
+pip install matplotlib ninja
 
 ```
 ### Render the result of the specified perspective
